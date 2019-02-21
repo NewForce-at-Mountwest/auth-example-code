@@ -1,22 +1,24 @@
 // --------- DB FUNCTIONS --------------//
 
-const getSingleUser = (id) => {
-  return fetch(`http://localhost:8088/users/${id}`)
-    .then(userInfo => userInfo.json())
-}
-
+// get user by username
 const getUserByUserName = (userName) => {
   return fetch(`http://localhost:8088/users?username=${userName}`)
-    .then(user => user.json())
+  .then(r => r.json())
 }
 
-const postNewUser = (userObject) => {
-  return fetch("http://localhost:8088/users", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(userObject)
-  })
-    .then(userInfo => userInfo.json())
+
+// const getMyTasks =(userIdParam) => {
+//   return fetch(`http://localhost:8088/task?userId=${userIdParam}`)
+//   .then(r=> r.json())
+// }
+// post new user
+
+const addNewUser = (userObj) => {
+return fetch("http://localhost:8088/users", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(userObj)
+}).then(r => r.json())
 }

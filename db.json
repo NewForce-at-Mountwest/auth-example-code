@@ -2,52 +2,27 @@
   "users": [
     {
       "name": "f",
-      "phone": "fd",
-      "email": "f",
-      "username": "f",
-      "password": "f",
-      "id": 1
-    },
-    {
-      "name": "adsflkj",
-      "phone": "kalsdjfl",
-      "email": "lkasjdf",
-      "username": "laksdjf",
-      "password": "alksdjf",
-      "id": 2
-    },
-    {
-      "name": "adlkfj",
-      "phone": "alkdjf",
-      "email": "adlksfj",
-      "username": "j",
-      "password": "j",
-      "id": 3
-    },
-    {
-      "name": "f",
       "phone": "f",
       "email": "f",
       "username": "f",
       "password": "f",
-      "id": 4
-    },
-    {
-      "name": "jordan",
-      "phone": "j",
-      "email": "j",
-      "username": "jordan",
-      "password": "j",
       "id": 5
     },
     {
-      "name": "kaldf",
-      "phone": "akldsfj",
-      "email": "adsfa",
-      "username": "adsf",
-      "password": "adsfa",
+      "name": "p",
+      "phone": "p",
+      "email": "p",
+      "username": "p",
+      "password": "p",
       "id": 6
+    },
+    {
+      "name": "d",
+      "phone": "d",
+      "email": "d",
+      "username": "d",
+      "password": "d",
+      "id": 7
     }
-  ],
-  "tasks": []
+  ]
 }

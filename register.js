@@ -1,3 +1,7 @@
+
+// should get inputs from register form
+// post them to db
+// then log the user in
 const handleRegister = () => {
   const nameVal = document.querySelector("#name-register").value
   const phoneVal = document.querySelector("#phone-register").value
@@ -5,7 +9,7 @@ const handleRegister = () => {
   const usernameVal = document.querySelector("#username-register").value
   const passwordVal = document.querySelector("#password-register").value
 
-  const newUser = {
+  const userObject = {
     name: nameVal,
     phone: phoneVal,
     email: emailVal,
@@ -13,10 +17,14 @@ const handleRegister = () => {
     password: passwordVal
   }
 
-  postNewUser(newUser)
-    .then(parsedUser => {
-      // Store the user's id in local storage
-      login(parsedUser.id)
-    })
+  console.log(userObject);
+
+  addNewUser(userObject)
+  .then((parsedUser) => {
+    console.log(parsedUser);
+    sessionStorage.setItem("userId", parsedUser.id)
+  })
+
+
 
 }
